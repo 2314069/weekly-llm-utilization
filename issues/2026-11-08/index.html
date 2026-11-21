@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+
+
+
+
+
+
+<title>Weekly LLM Utilization #6 — Weekly LLM Utilization</title>
+<meta name="description" content="Kimi K3.1 Pro のウェイト公開と Anthropic の S-1 修正の続報に、Claude Code の情報流出の報告が重なった週。クレディセゾンのクレジット枯渇と SMFL の事例、freee の自社 SLM を深掘り。">
+
+<link rel="canonical" href="https://2314069.github.io/weekly-llm-utilization/issues/2026-11-08/">
+<link rel="icon" type="image/svg+xml" href="/weekly-llm-utilization/assets/favicon.svg">
+<link rel="alternate" type="application/atom+xml" title="Weekly LLM Utilization" href="/weekly-llm-utilization/feed.xml">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Weekly LLM Utilization #6">
+<meta property="og:description" content="Kimi K3.1 Pro のウェイト公開と Anthropic の S-1 修正の続報に、Claude Code の情報流出の報告が重なった週。クレディセゾンのクレジット枯渇と SMFL の事例、freee の自社 SLM を深掘り。">
+<meta property="og:url" content="https://2314069.github.io/weekly-llm-utilization/issues/2026-11-08/">
+<meta property="og:site_name" content="Weekly LLM Utilization">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Weekly LLM Utilization #6">
+<meta name="twitter:description" content="Kimi K3.1 Pro のウェイト公開と Anthropic の S-1 修正の続報に、Claude Code の情報流出の報告が重なった週。クレディセゾンのクレジット枯渇と SMFL の事例、freee の自社 SLM を深掘り。">
+
+<link rel="stylesheet" href="/weekly-llm-utilization/assets/css/style.css">
+
+<link type="application/atom+xml" rel="alternate" href="https://2314069.github.io/weekly-llm-utilization/feed.xml" title="Weekly LLM Utilization" />
+<!-- Begin Jekyll SEO tag v2.9.1 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Weekly LLM Utilization #6" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="description" content="LLM（大規模言語モデル）の技術動向とビジネス活用事例を、コンサルタント向けに 毎週日曜にまとめるウィークリーレポート。出典付きの事例と業界別の示唆を10分で。" />
+<meta name="twitter:description" property="og:description" content="LLM（大規模言語モデル）の技術動向とビジネス活用事例を、コンサルタント向けに 毎週日曜にまとめるウィークリーレポート。出典付きの事例と業界別の示唆を10分で。" />
+<link rel="canonical" href="https://2314069.github.io/weekly-llm-utilization/issues/2026-11-08/" />
+<meta property="og:url" content="https://2314069.github.io/weekly-llm-utilization/issues/2026-11-08/" />
+<meta property="og:site_name" content="Weekly LLM Utilization" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-11-22T08:28:58+09:00" />
+<meta property="article:modified_time" content="2026-11-22T08:28:58+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Weekly LLM Utilization #6" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-22T08:28:58+09:00","datePublished":"2026-11-22T08:28:58+09:00","description":"LLM（大規模言語モデル）の技術動向とビジネス活用事例を、コンサルタント向けに 毎週日曜にまとめるウィークリーレポート。出典付きの事例と業界別の示唆を10分で。","headline":"Weekly LLM Utilization #6","mainEntityOfPage":{"@type":"WebPage","@id":"https://2314069.github.io/weekly-llm-utilization/issues/2026-11-08/"},"url":"https://2314069.github.io/weekly-llm-utilization/issues/2026-11-08/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+<body class="layout-issue">
+  <header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-brand" href="/weekly-llm-utilization/">
+      <span class="site-brand__mark" aria-hidden="true">W</span>
+      <span class="site-brand__name">
+        <span class="site-brand__name-en">Weekly LLM Utilization</span>
+        <span class="site-brand__name-tag">毎週日曜 / 10 分で読める LLM ダイジェスト</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="メイン">
+      <a href="/weekly-llm-utilization/archive/" >アーカイブ</a>
+      <a href="/weekly-llm-utilization/about/" >About</a>
+      <a href="/weekly-llm-utilization/feed.xml" class="site-nav__rss" title="RSS">RSS</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="site-main" id="content">
+    <article class="issue container container--narrow h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="issue-header">
+    <p class="issue-eyebrow">
+      <span class="issue-eyebrow__no">Issue #6</span>
+      <span class="issue-eyebrow__date">2026-11-08</span>
+      <span class="badge-backfill" title="2026-11-22 に後日作成">後日作成</span>
+      <span class="issue-eyebrow__reading">読了 10 min</span>
+    </p>
+    <h1 class="issue-title p-name" itemprop="name headline">Weekly LLM Utilization #6</h1>
+    
+      <p class="issue-lede">Kimi K3.1 Pro のウェイト公開と Anthropic の S-1 修正の続報に、Claude Code の情報流出の報告が重なった週。クレディセゾンのクレジット枯渇と SMFL の事例、freee の自社 SLM を深掘り。</p>
+    
+    <dl class="issue-meta">
+      <dt>対象期間</dt><dd>2026-11-02..2026-11-08</dd>
+      <dt>連載コーナー</dt><dd>case-deep-dive</dd>
+    </dl>
+  </header>
+
+  <div class="issue-body prose e-content" itemprop="articleBody">
+    <!-- 注意: タイトルと期間/読了時間はレイアウト側で表示される。本文に H1 や期間ブロックを書かないこと。 -->
+
+<p>この号は 2026-11-22 に後日作成したバックナンバーです。内容は対象週の時点の情報にもとづきます。</p>
+
+<h2 id="今週のハイライト">今週のハイライト</h2>
+<ul>
+  <li>Moonshot が Kimi K3.1 Pro のウェイトを予告どおり 11/4 に公開し、外部への API 提供などには別契約の条件を付けた。</li>
+  <li>Anthropic が S-1 を修正し、第3四半期の売上は約170億ドル、前期比の伸びは約47%に鈍ったと報じられた（要確認）。</li>
+  <li>クレディセゾンが、全社員約3,600人に配った ChatGPT Enterprise のクレジットを月半ばで使い切り、使い方の周知で立て直した。</li>
+</ul>
+
+<h2 id="技術動向">技術動向</h2>
+
+<h3 id="kimi-k31-pro-のウェイト公開商用の線引きはライセンスごとに違う">Kimi K3.1 Pro のウェイト公開：商用の線引きはライセンスごとに違う</h3>
+<p><strong>ソース</strong>: <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Hugging Face</a>・2026-11-04</p>
+
+<p>前号で触れた Kimi K3.1 Pro のウェイト公開の続報。Moonshot は予告どおり 11/4 に、総パラメータ2.8T（アクティブ104B）の MoE モデルのウェイトを公開した。文脈は約1M トークン。<a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE">ライセンス</a>は独自のもので、直近12カ月の売上が2,000万ドルを超える事業者が、API などで第三者に推論やファインチューニングを提供する場合は、Moonshot との別契約が要る。月間利用者1億超か月商2,000万ドル超の商用製品には、UI に名称を表示する義務がある。第三者に提供しない社内利用は、どちらの条件も対象外だ。</p>
+
+<p>クライアントには「社内で使う分にはほぼ制約がないが、自社 SaaS から推論 API を外に出す構成は別契約の対象になりうる」と説明できる。前号の Mistral Large 4 と同じく、オープンウェイトでも商用の条件はライセンスごとに違う。ベンチマークは自社公表だ。米国の公共部門向けなど、中国製モデルを避ける要件がある案件では、性能以前に対象外になる。</p>
+
+<h3 id="gpt-6-cyber脆弱性の発見が速まると修正が追いつかない">GPT-6 Cyber：脆弱性の「発見」が速まると「修正」が追いつかない</h3>
+<p><strong>ソース</strong>: <a href="https://openai.com/index/introducing-gpt-6-cyber">OpenAI</a>・2026-11-05</p>
+
+<p>OpenAI は、脆弱性の発見と修正に特化した GPT-6 Cyber を発表した。提供はサイバー防御向けのプログラム Daybreak の最上位、Daybreak Red に限り、本人確認がある。<a href="https://openai.com/index/a-thousand-fewer-paths-to-root">前日の記事</a>では、自律的な仕組みで Linux カーネルのローカル権限昇格の脆弱性948件を見つけ、検証し、パッチ案まで作ったとしている（要確認。報道では「potential issues」とされ、確定した件数かは分からない）。</p>
+
+<p>クライアントには、脆弱性の発見がモデルで大量に進むと、パッチを当てる運用部門の処理が追いつかなくなる、と説明したい。脆弱性管理の体制と SLA を見直す材料になる。前号の Gemini 4 Carbon と同じく、高いサイバー能力は申請制で配る形が揃ってきた。</p>
+
+<h3 id="claude-codeエージェントの端末から想定外の経路で情報が出る">Claude Code：エージェントの端末から、想定外の経路で情報が出る</h3>
+<p><strong>ソース</strong>: <a href="https://github.com/anthropics/claude-code/issues/107757">GitHub Issue</a>・2026-11-05 / <a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Apiiro</a>・2026-11-05</p>
+
+<p>Claude Code の 2.1.318（macOS）で、Web 検索の際にアカウントのメールアドレスが User-Agent に入り、外部のサイトに送られていたと報告された。同日、Anthropic 側の担当者は、これを防ぐ仕組みを既定で有効にしたと回答した。別件で Apiiro は、「Yes, and don’t ask again」で承認したコマンドが文字列のまま設定ファイルに保存され、パスワードや API キーを含んだまま公開リポジトリに上がっている例を報告した。報道では、実際の秘密情報を含む公開コピーは1,122件とも1,379件ともされる（要確認）。</p>
+
+<p>クライアントには、コーディングエージェントは従来の開発ツールより情報が外に出る経路が多い、と説明できる。エージェントの設定ファイルを .gitignore とシークレットスキャンの対象に入れ、承認したコマンドに秘密情報がないかを点検する項目を、導入ガイドラインに加えるよう勧めたい。</p>
+
+<h2 id="ビジネス活用">ビジネス活用</h2>
+
+<h3 id="anthropic-が-s-1-を修正伸びは鈍化計算資源の確約は約9000億ドル">Anthropic が S-1 を修正：伸びは鈍化、計算資源の確約は約9,000億ドル</h3>
+<p><strong>ソース</strong>: <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm">SEC EDGAR</a>・2026-11-02・Anthropic・業界: AI ベンダー</p>
+
+<p>前号で触れた S-1 の続報。Anthropic は 11/2 に修正版（S-1/A）を提出した。<a href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html">CNBC</a> によると、2026年第3四半期の売上は約170億ドルで、前期比の伸びは約47%と、第2四半期の144%、第1四半期の132%から鈍った。第3四半期の純損失は232.9億ドル。購入契約とリースによる支払いの確約は合計約8,954億ドルで、ほぼすべてが計算資源とインフラ向けだという。<a href="https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/">TechCrunch</a> によると、値下げで売上の伸びが約6億ドル減ったとの記載もある。数字はいずれも二次報道によるもので、要確認だ。</p>
+
+<p>伸びは続いているが鈍り、計算資源の確約は積み上がった。※筆者見解：上場後は収益の圧力が価格や提供条件に響く可能性がある。クライアントの契約更新では、価格改定と提供条件の変更に関する条項を確かめるよう勧めたい。前号で触れた上位顧客への集中度は、今回読めた報道には出ていない。</p>
+
+<h3 id="クレディセゾン全社員に配ったら月半ばでクレジットが枯渇">クレディセゾン：全社員に配ったら、月半ばでクレジットが枯渇</h3>
+<p><strong>ソース</strong>: <a href="https://www.itmedia.co.jp/business/articles/2611/04/news010.html">ITmedia ビジネスオンライン</a>・2026-11-04・クレディセゾン・業界: 金融（クレジットカード）</p>
+
+<p>クレディセゾンは2025年9月1日、国内の全社員約3,600人に ChatGPT Enterprise を配った。毎月初めに150万クレジットへ戻る枠を、2026年6月15日に使い切り、インスタントモード以外が使えなくなった。小野和俊 CDO 兼 CTO は「さすがにトークン枯渇は起こらないだろうと高を括っていた」と話す。同社は「白黒とカラーで値段が違うコピー機」に例え、普段はインスタントモード、深い推論や画像生成は必要な場面だけ、と各部門の会議で周知し、月内の利用を続けられるようにした。月1回以上の利用者は91.7%（2026年3月）だった。</p>
+
+<p>席数ではなくクレジットで課金されるプランを提案するときの注意点として引ける。技術的な制限ではなく、使い方の周知で乗り切った点も参考になる。同じ週、ChatGPT と Codex が同じ利用枠を使うようになると報じられた（<a href="https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/">TechCrunch</a>・2026-11-02）。※筆者見解：利用枠の見積もりは、今後さらに重要になる。なお、同社の約230万時間の業務削減は、2019年からの DX 全体の累計と読める（※筆者見解）。AI 単独の効果と混同しないよう注意したい。</p>
+
+<h3 id="三井住友ファイナンスリース顧客別の改修を-replit-で6人半年が1人1週間に">三井住友ファイナンス＆リース：顧客別の改修を Replit で、6人・半年が1人・1週間に</h3>
+<p><strong>ソース</strong>: <a href="https://www.itmedia.co.jp/aiplus/article/2611/06/2000002933/">ITmedia AI+</a>・2026-11-06・三井住友ファイナンス＆リース・業界: リース（SaaS）</p>
+
+<p>三井住友ファイナンス＆リース（SMFL）は、200社超と有償契約している資産管理クラウド「assetforce」に、Replit のバイブコーディングの機能を組み込み、顧客ごとのカスタマイズを自然言語で作れるようにする。両者をつなぐ開発基盤「ADP」で認証と権限を確かめ、企業が許可したデータと操作だけを通す。品質管理のエージェントが決定論的なテストでコードを検証し、最後は SMFL のエンジニアが確認してから実装する。assetforce の改修では、6人・約半年と見込んだ開発が1人・1週間で終わったという。</p>
+
+<p>「顧客ごとのカスタマイズは高い」というパッケージ SaaS の前提を変える例だ。権限の関所、自動テスト、人の最終確認の3段で品質を担保する設計は、SIer やパッケージベンダー向けの提案の型になる。200画面超のシステムで開発・テストの期間が3分の1になるという数字は、見込み値である点を添えたい。</p>
+
+<h2 id="規制ガバナンス">規制・ガバナンス</h2>
+
+<h3 id="anthropic-は開発の加速をリスクとして開示日本はエージェントの監視が手薄">Anthropic は開発の加速をリスクとして開示、日本はエージェントの監視が手薄</h3>
+<p><strong>ソース</strong>: <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026068676/anthropicpbc-sx1ax1.htm">SEC EDGAR</a>・2026-11-02 / <a href="https://www.itmedia.co.jp/enterprise/articles/2611/06/news022.html">ITmedia エンタープライズ</a>・2026-11-06・管轄: US / JP</p>
+
+<p>Anthropic は S-1/A に、責任あるスケーリング方針（RSP）が定める「AI に起因する劇的に加速した進歩」の基準に、将来のモデルが近づく可能性があると追記した（<a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">TechCrunch</a>・2026-11-02）。現在のモデルが基準を超えたとは認めていない。主要ベンダーが自社の開発の速さを投資家向けのリスクとして開示したことは、ベンダー評価に「安全方針の運用と開示」を入れる根拠になる。</p>
+
+<p>国内では KnowBe4 の調査で、日本のセキュリティリーダー75人のうち79%が AI エージェントを導入済み（世界平均58%）で、導入組織の34%が人の監視が限られたまま自律稼働させていた（同17%）。回答数は少なく、調査主体は管理製品を出すベンダーでもある。エージェントの導入提案には、利用状況の可視化と監視の体制をセットで入れたい。</p>
+
+<h2 id="連載-事例深掘りfreee月100万枚の帳票処理を自社-slm-に">連載: 事例深掘り「freee、月100万枚の帳票処理を自社 SLM に」</h2>
+<p><strong>ソース</strong>: <a href="https://www.itmedia.co.jp/enterprise/articles/2610/30/news021.html">ITmedia エンタープライズ</a>・2026-11-07・freee・業界: 会計 SaaS</p>
+
+<p>freee は、freee 会計などの AI OCR で月100万枚の帳票を処理している。2つある工程の一方を、8B クラスのオープンウェイトモデルを LoRA で調整した自社の小型モデル（SLM）に置き換えた。同社の資料では、「Claude Sonnet 4.6」相当のモデルと比べ、テキスト項目の精度は最大10ポイント上がり、速度は5倍、コストは50分の1になった。6月の AWS Summit Japan 2026 での木佐森慶一氏の講演の記事（会員限定）から、判断の筋道を追う。</p>
+
+<p><strong>1. なぜ置き換えたか</strong>
+外部 API は従量課金で、処理量に比例して費用が膨らむ。木佐森氏は「向き合うべきは、現実的なコストで月100万枚をさばくというビジネス上の課題です」と話す。</p>
+
+<p><strong>2. 何を絞ったか</strong>
+画像からの文字起こしと、テキストから日付・金額・取引先などを抜き出す工程のうち、置き換えたのは後者だけだ。学習に使った正解データは約1万枚、検証とテストには数万枚を使った。※筆者見解：全工程を一度に替えず、範囲を絞ったことが成否を分けたとみられる。</p>
+
+<p><strong>3. どこでつまずいたか</strong>
+最初は自社でホストしても、外部 API 並みの速度しか出なかった。AWS のチームと1日がかりで推論の設定を見直し、スループットの不足を乗り越えた。</p>
+
+<p><strong>4. 判断の物差し</strong>
+同社は「Claude Haiku 4.5 で安定して解けるタスクなら 8B の SLM に置き換えられる」という目安を示す。試作の段階でスループットを実測すれば、コストは逆算できるという。本番後も評価・監視・改善を回し続ける。</p>
+
+<p><strong>提案に使うときの注意</strong>
+コスト50分の1は、従量課金と、GPU を時間で借りる時間課金の違いから来ている。安定した大量のトラフィックが前提だ。※筆者見解：処理量が少ない業務や、波の大きい業務では同じ効果は出にくい。数値は freee の講演資料にもとづき、第三者の検証はなく、比較したモデルも6月時点のものだ。</p>
+
+<h2 id="今週の-takeaway">今週の Takeaway</h2>
+<ol>
+  <li>AI の利用枠とコストは、展開の前に見積もる。クレディセゾンのクレジット枯渇と freee の自社 SLM は、使い方の周知と処理の置き換えという別々の抑え方を示した。</li>
+  <li>コーディングエージェントの設定ファイルと端末を、情報管理の対象に入れる。Claude Code のメールアドレス送信と、承認ルール経由の秘密情報の公開が同じ週に報告された。</li>
+  <li>オープンウェイトの採用では、性能より先にライセンスの商用条件を確かめる。Kimi K3.1 Pro は、外部への API 提供に別契約を求める。</li>
+</ol>
+
+<h2 id="来週の注目">来週の注目</h2>
+<ul>
+  <li>11/12：Thinking Machines が Inkling 2 Small（594B / 17B の MoE、Apache 2.0）のウェイトを公開する予定（<a href="https://thinkingmachines.ai/news/inkling-2-small/">Thinking Machines</a>の予告）。</li>
+  <li>11/16：キーエンスが PLC 向けの AI エージェント「KV Intelligence」を発売する（<a href="https://monoist.itmedia.co.jp/mn/articles/2611/04/news044.html">MONOist</a>・キーエンスの発表）。</li>
+</ul>
+
+<hr />
+<p><em>Weekly LLM Utilization #6 — 2026-11-08 号（2026-11-22 後日作成）</em></p>
+
+  </div>
+
+  
+  
+  
+
+  
+    
+    
+    
+      <nav class="issue-nav" aria-label="前後号">
+        <div class="issue-nav__cell issue-nav__cell--prev">
+          
+            
+            <span class="issue-nav__label">前号</span>
+            <a class="issue-nav__link" href="/weekly-llm-utilization/issues/2026-11-01/">Weekly LLM Utilization #5</a>
+          
+        </div>
+        <div class="issue-nav__cell issue-nav__cell--next">
+          
+            
+            <span class="issue-nav__label">次号</span>
+            <a class="issue-nav__link" href="/weekly-llm-utilization/issues/2026-11-15/">Weekly LLM Utilization #7</a>
+          
+        </div>
+      </nav>
+    
+  
+
+  <p class="issue-back"><a href="/weekly-llm-utilization/archive/">← アーカイブ一覧へ</a></p>
+
+  <a class="u-url" href="/weekly-llm-utilization/issues/2026-11-08/" hidden></a>
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <span class="site-footer__title">Weekly LLM Utilization</span>
+      <span class="site-footer__tag">毎週日曜公開、LLM の技術動向とビジネス活用を 10 分で</span>
+    </div>
+    <nav class="site-footer__nav" aria-label="フッター">
+      <a href="/weekly-llm-utilization/">トップ</a>
+      <a href="/weekly-llm-utilization/archive/">アーカイブ</a>
+      <a href="/weekly-llm-utilization/about/">About</a>
+      <a href="/weekly-llm-utilization/feed.xml">RSS</a>
+    </nav>
+    <small class="site-footer__copy">© 2026 Weekly LLM Utilization. 個人運営のニュースレター。</small>
+  </div>
+</footer>
+
+</body>
+</html>

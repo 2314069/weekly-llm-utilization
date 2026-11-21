@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+
+
+
+
+
+
+<title>Weekly LLM Utilization #4 — Weekly LLM Utilization</title>
+<meta name="description" content="LiteLLM の改ざん版配布と Agent Skills の標準化で、AI 部品の選び方と守り方が問われた週。Uber・Bayer の展開例と、大田区の AI 電話の2年目を紹介。">
+
+<link rel="canonical" href="https://2314069.github.io/weekly-llm-utilization/issues/2026-10-25/">
+<link rel="icon" type="image/svg+xml" href="/weekly-llm-utilization/assets/favicon.svg">
+<link rel="alternate" type="application/atom+xml" title="Weekly LLM Utilization" href="/weekly-llm-utilization/feed.xml">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Weekly LLM Utilization #4">
+<meta property="og:description" content="LiteLLM の改ざん版配布と Agent Skills の標準化で、AI 部品の選び方と守り方が問われた週。Uber・Bayer の展開例と、大田区の AI 電話の2年目を紹介。">
+<meta property="og:url" content="https://2314069.github.io/weekly-llm-utilization/issues/2026-10-25/">
+<meta property="og:site_name" content="Weekly LLM Utilization">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Weekly LLM Utilization #4">
+<meta name="twitter:description" content="LiteLLM の改ざん版配布と Agent Skills の標準化で、AI 部品の選び方と守り方が問われた週。Uber・Bayer の展開例と、大田区の AI 電話の2年目を紹介。">
+
+<link rel="stylesheet" href="/weekly-llm-utilization/assets/css/style.css">
+
+<link type="application/atom+xml" rel="alternate" href="https://2314069.github.io/weekly-llm-utilization/feed.xml" title="Weekly LLM Utilization" />
+<!-- Begin Jekyll SEO tag v2.9.1 -->
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Weekly LLM Utilization #4" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="description" content="LLM（大規模言語モデル）の技術動向とビジネス活用事例を、コンサルタント向けに 毎週日曜にまとめるウィークリーレポート。出典付きの事例と業界別の示唆を10分で。" />
+<meta name="twitter:description" property="og:description" content="LLM（大規模言語モデル）の技術動向とビジネス活用事例を、コンサルタント向けに 毎週日曜にまとめるウィークリーレポート。出典付きの事例と業界別の示唆を10分で。" />
+<link rel="canonical" href="https://2314069.github.io/weekly-llm-utilization/issues/2026-10-25/" />
+<meta property="og:url" content="https://2314069.github.io/weekly-llm-utilization/issues/2026-10-25/" />
+<meta property="og:site_name" content="Weekly LLM Utilization" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-11-22T08:28:58+09:00" />
+<meta property="article:modified_time" content="2026-11-22T08:28:58+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Weekly LLM Utilization #4" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-11-22T08:28:58+09:00","datePublished":"2026-11-22T08:28:58+09:00","description":"LLM（大規模言語モデル）の技術動向とビジネス活用事例を、コンサルタント向けに 毎週日曜にまとめるウィークリーレポート。出典付きの事例と業界別の示唆を10分で。","headline":"Weekly LLM Utilization #4","mainEntityOfPage":{"@type":"WebPage","@id":"https://2314069.github.io/weekly-llm-utilization/issues/2026-10-25/"},"url":"https://2314069.github.io/weekly-llm-utilization/issues/2026-10-25/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+<body class="layout-issue">
+  <header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-brand" href="/weekly-llm-utilization/">
+      <span class="site-brand__mark" aria-hidden="true">W</span>
+      <span class="site-brand__name">
+        <span class="site-brand__name-en">Weekly LLM Utilization</span>
+        <span class="site-brand__name-tag">毎週日曜 / 10 分で読める LLM ダイジェスト</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="メイン">
+      <a href="/weekly-llm-utilization/archive/" >アーカイブ</a>
+      <a href="/weekly-llm-utilization/about/" >About</a>
+      <a href="/weekly-llm-utilization/feed.xml" class="site-nav__rss" title="RSS">RSS</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="site-main" id="content">
+    <article class="issue container container--narrow h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="issue-header">
+    <p class="issue-eyebrow">
+      <span class="issue-eyebrow__no">Issue #4</span>
+      <span class="issue-eyebrow__date">2026-10-25</span>
+      <span class="badge-backfill" title="2026-11-21 に後日作成">後日作成</span>
+      <span class="issue-eyebrow__reading">読了 10 min</span>
+    </p>
+    <h1 class="issue-title p-name" itemprop="name headline">Weekly LLM Utilization #4</h1>
+    
+      <p class="issue-lede">LiteLLM の改ざん版配布と Agent Skills の標準化で、AI 部品の選び方と守り方が問われた週。Uber・Bayer の展開例と、大田区の AI 電話の2年目を紹介。</p>
+    
+    <dl class="issue-meta">
+      <dt>対象期間</dt><dd>2026-10-19..2026-10-25</dd>
+      <dt>連載コーナー</dt><dd>from-the-field</dd>
+    </dl>
+  </header>
+
+  <div class="issue-body prose e-content" itemprop="articleBody">
+    <!-- 注意: タイトルと期間/読了時間はレイアウト側で表示される。本文に H1 や期間ブロックを書かないこと。 -->
+
+<p>この号は 2026-11-21 に後日作成したバックナンバーです。内容は対象週の時点の情報にもとづきます。</p>
+
+<h2 id="今週のハイライト">今週のハイライト</h2>
+<ul>
+  <li>LiteLLM 1.107.0 の改ざん版が PyPI などで配布され、起動するだけで認証情報を盗むバックドアが仕込まれていた。</li>
+  <li>Anthropic が Agent Skills を Linux Foundation 傘下の AAIF に寄贈し、MCP に続いてベンダー中立の標準になった。</li>
+  <li>EU が AI Act 初の整合規格 EN 18286:2026 を官報に掲載し、国内では AI・デジタル改革推進会議が初会合を開いた。</li>
+</ul>
+
+<h2 id="技術動向">技術動向</h2>
+
+<h3 id="litellm-の改ざん版が配布されるai-部品のサプライチェーンを点検する">LiteLLM の改ざん版が配布される：AI 部品のサプライチェーンを点検する</h3>
+<p><strong>ソース</strong>: <a href="https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/">SafeDep</a>・2026-10-21</p>
+
+<p>悪意のある litellm 1.107.0 が、PyPI と Docker Hub / GHCR に公開された。Python のプロセスを起動するだけで、SSH 鍵、クラウドの認証情報、LLM の API キーを盗み、1時間ごとに動くバックドアを設置する。原因は開発者の GitHub CLI の認証情報の流出とされる。1.106.2 と 1.107.0rc1 / rc2 には問題がない。</p>
+
+<p>LLM ゲートウェイとして LiteLLM を使うクライアントには、該当バージョンを入れていないかの確認と、認証情報の入れ替えを最優先で勧めたい。AI 系の依存パッケージは、バージョンの固定とダイジェストの検証を標準にする契機になる。本稿は SafeDep の解析にもとづき、LiteLLM の公式アドバイザリは対象週の時点で確認できていない。</p>
+
+<h3 id="agent-skills-がベンダー中立の標準に">Agent Skills がベンダー中立の標準に</h3>
+<p><strong>ソース</strong>: <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic</a>・2026-10-22</p>
+
+<p>Anthropic は、エージェントに業務の手順を渡す形式 Agent Skills を、名称、GitHub の組織、agentskills.io のドメインごと、Linux Foundation 傘下の Agentic AI Foundation（AAIF）に寄贈した。ChatGPT、Cursor、GitHub Copilot、VS Code など70を超えるエージェント基盤が対応済みで、公開スキルは100万、インストールは約2.8億件という（同社の発表）。</p>
+
+<p>クライアントには「MCP に続いて、手順を渡す形式も特定ベンダーのものではなくなった」と説明できる。社内の手順書やノウハウを Skills の形式で整えておけば、後からモデルやツールを替えても資産が残る。</p>
+
+<h3 id="kimi-k31-pro中国系オープンウェイトの有力候補と使う前の確認事項">Kimi K3.1 Pro：中国系オープンウェイトの有力候補と、使う前の確認事項</h3>
+<p><strong>ソース</strong>: <a href="https://www.kimi.ai/blog/kimi-k3-1-pro">Moonshot</a>・2026-10-23</p>
+
+<p>Moonshot は、3T クラスで 1M トークンの文脈を持つ Kimi K3.1 Pro を発表し、11/4 までにウェイトを公開するとした。同社が公表した Terminal-Bench 4.0 のスコアは 65.7% で、Claude Opus 5.5 の 66.4% に迫る。ただしベンチマークは自社公表で、価格は未確認だ。VentureBeat はプロモーションをめぐる疑惑も報じている。</p>
+
+<p>同じ週、米国土安全保障省は、連邦の民間機関に DeepSeek の製品とそれを基にしたツールを外すよう求める命令（7/24 付）を公表した（<a href="https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/">TechCrunch</a>・2026-10-20）。民間企業は対象外だが、米国の公共部門を顧客に持つクライアントは、製品に含まれる中国製モデル（派生モデルを含む）を棚卸ししてから評価に入りたい。</p>
+
+<h2 id="ビジネス活用">ビジネス活用</h2>
+
+<h3 id="openai-のモデルが-google-cloud-でも使えるように">OpenAI のモデルが Google Cloud でも使えるように</h3>
+<p><strong>ソース</strong>: <a href="https://openai.com/index/openai-models-google-cloud">OpenAI</a>・2026-10-21・OpenAI / Google Cloud・業界: クラウド</p>
+
+<p>OpenAI のモデルと Codex のワークフローが、Google Cloud で使えるようになる。報道によると、Vertex AI の Model Garden で一部の顧客向けのプライベートプレビューとして始まり、既存の Google Cloud のコミット額を充当できる。Google は「主要3社のクローズドモデルをすべて使える唯一のハイパースケーラー」と位置づけている。</p>
+
+<p>Azure、AWS Bedrock に続いて、GCP でも OpenAI のモデルを既存の調達と課金の枠内で選べる。クラウドの契約がモデルの選定を縛る度合いは、さらに下がる。ただし提供の範囲（プレビューか GA か）と対象のモデルは報道で食い違っており（要確認）、提案に書くときは「プレビュー段階」と添えたい。</p>
+
+<h3 id="uber1000人の試行から3万人へ伴走のエンジニアを付けて広げる">Uber：1,000人の試行から3万人へ、伴走のエンジニアを付けて広げる</h3>
+<p><strong>ソース</strong>: <a href="https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/">TechCrunch</a>・2026-10-22・Uber・業界: モビリティ</p>
+
+<p>Uber は全社員約3万人に ChatGPT Work を展開する。財務・オペレーション・プロダクトの各部門から1,000人が試行に参加し、早い時期の利用者の約80%はエンジニア以外だった。全社に広げる前に、AI エンジニア30人を各チームに2週間ずつ付けて、業務の自動化を手伝わせた。</p>
+
+<p>「小さく試す → 伴走役を付ける → 全社に広げる」という展開の型として、そのまま提案に使える。伴走の人数と期間が明示されているので、体制の見積もりにも役立つ。一方、費用と効果の測定結果は公表されていない。</p>
+
+<h3 id="bayer-crop-science22のエージェントを本番で動かし見送った機能も公開">Bayer Crop Science：22のエージェントを本番で動かし、見送った機能も公開</h3>
+<p><strong>ソース</strong>: <a href="https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/">AWS Machine Learning Blog</a>・2026-10-23・Bayer Crop Science・業界: 農業</p>
+
+<p>Bayer Crop Science は、Amazon Bedrock AgentCore の上で、取りまとめ役のエージェントと22の専門エージェントからなる意思決定の仕組みを本番で動かしている。約20の社内 API を、エージェントから呼べるツールに変換した。同社の申告では、API 統合の手間を99%超減らし、質問の約80%をエンジニアの介入なしで解決し、プロンプトキャッシュで入力のコストを20〜30%下げた。</p>
+
+<p>提案に使えるのは、採用しなかった判断の記録だ。推論モードは、ツールの呼び出しや構造化出力と両立しなかったため見送ったという。「通信の成功とタスクの成功を区別せよ」という教訓も、エージェントの KPI 設計にそのまま持ち込める。数字は AWS ブログ上の自社申告である点は添えておく。</p>
+
+<h3 id="microsoftmai-dxo精度の伸びの大半は基盤モデルから">Microsoft「MAI-DxO」：精度の伸びの大半は基盤モデルから</h3>
+<p><strong>ソース</strong>: <a href="https://microsoft.ai/news/building-medical-superintelligence/">Microsoft AI</a>・2026-10-22・Microsoft・業界: 医療</p>
+
+<p>Microsoft AI は、複数のエージェントが合議して診断する MAI-DxO を、Science 誌に発表した。NEJM の難しい症例を再現したシミュレーションで、正答率は83%だった（単独の医師は36%）。GPT-5.5 を単体で使うと72%で、MAI-DxO を重ねると約87%になる。</p>
+
+<p>※筆者見解：精度の伸びの大半は基盤モデルそのものから来ており、合議の仕組みを自前で作る価値は限られる、と読める。救急の症例ではほとんど差が出なかった点も含め、医療のクライアントには「どの症例で効くか」を分けて伝えたい。</p>
+
+<h3 id="三菱電機言葉の指示をロボットと工作機械に振り分ける">三菱電機：言葉の指示をロボットと工作機械に振り分ける</h3>
+<p><strong>ソース</strong>: <a href="https://www.mitsubishielectric.co.jp/ja/pr/2026/1021_rd/">三菱電機</a>・2026-10-21・三菱電機・業界: 製造</p>
+
+<p>三菱電機は、自然言語の指示から加工のタスクを作り、ロボットと工作機械に振り分けるフィジカル AI の技術を発表した。段取り、清掃、搬送、検査、トラブル対応をヒューマノイドに任せる構想で、2030年の実用化を目指す。製造業のクライアントに、工場の AI がどこまで来ているかを示す参照例になる。ただし研究開発の段階で、価格と提供時期は公表されていない。</p>
+
+<h2 id="規制ガバナンス">規制・ガバナンス</h2>
+
+<h3 id="eu-は-ai-act-初の整合規格日本はaiデジタル改革推進会議が始動">EU は AI Act 初の整合規格、日本は「AI・デジタル改革推進会議」が始動</h3>
+<p><strong>ソース</strong>: <a href="https://digital-strategy.ec.europa.eu/en/library/first-harmonised-standard-supporting-ai-act-published-official-journal">欧州委員会</a>・2026-10-19 / <a href="https://www.digital.go.jp/councils/ai_digital">デジタル庁</a>・2026-10-22・管轄: EU / JP</p>
+
+<p>EU は、高リスク AI の提供者向けの品質マネジメント規格 EN 18286:2026 を官報に掲載した。準拠すれば、規格がカバーする範囲で AI Act 第17条への適合が推定される。ISO/IEC 42001 などの既存の仕組みに上乗せする設計で、取得済みの企業は差分の対応で済む。採用や与信などの高リスク用途（Annex III）への適用は 2027-12-02 に延期されており、これが準備期間の目安になる。EU 向けに採用や与信の AI を提供するクライアントには、ベンダー選定の確認項目に「EN 18286 への対応予定」を加えるよう勧めたい。</p>
+
+<p>国内では AI・デジタル改革推進会議が 10/22 に初会合を開いた。日経の報道によると、AI の誤作動による損害の責任と救済のルール、開示義務の強化などを検討し、最終案は2027年6月をめどにする（要確認）。同じ週、デジタル庁は政府職員約18万人向けにエージェントの環境を提供し始め、遵守事項を定めた「<a href="https://www.digital.go.jp/policies/genai/agent-safety-standard">源内基準</a>」を公表した。社内でエージェントを統制する規程のひな型として使える。</p>
+
+<h2 id="連載-導入の現場大田区の-ai-電話目標の半分から始めた2年目">連載: 導入の現場「大田区の AI 電話、目標の半分から始めた2年目」</h2>
+<p><strong>ソース</strong>: <a href="https://kn.itmedia.co.jp/kn/article/2610/23/2000002529/">キーマンズネット</a>・2026-10-23・東京都大田区・業界: 自治体</p>
+
+<p>大田区は、AI による電話対応を2年続けている。1年目（防災課）は担当者の対応を80%減らす目標だったが、AI だけで完結したのは約40%にとどまった。2年目は建築審査課に場所を移し、2026年10月1日から2027年2月28日まで、年約1,000時間の電話対応を30%減らすことを目標にしている。1年目の未達をどう分析し、2年目に何を変えたかを整理する。</p>
+
+<p><strong>1. 未達の原因を3つに分けた</strong>
+原因は、曖昧な質問、音声認識の誤り、分岐型のシナリオの限界の3つだった。あらかじめ決めた分岐をたどる作りでは、想定から外れた質問に対応できなかった。原因を「質問の側」「聞き取りの側」「仕組みの側」に分けたことで、2年目に何を直すかが決めやすくなった。</p>
+
+<p><strong>2. 答える範囲を公開情報に絞った</strong>
+2年目は、AI が答える範囲を公開されている情報に限った。そのうえで、想定 Q&amp;A と類義語の辞書を整えた。何でも答えようとする作りをやめ、答えられる質問を確実に答える作りに切り替えたことになる。対象の課も防災から建築審査に移した（※筆者見解：問い合わせの中身が比較的定まった業務を選んだとみられる）。</p>
+
+<p><strong>3. 目標を置き直した</strong>
+目標は「80%減」から「30%減」に下がった。※筆者見解：1年目の約40%という実績を踏まえ、達成できる水準に置き直したと読める。</p>
+
+<p><strong>提案に使うときの注意</strong>
+音声 AI の成否は「答える範囲を限る」「言い換えの辞書を整える」の2点で決まる、というのがこの事例の示唆だ。音声ボットを提案するときは、初年度の目標を高く置きすぎないこと、未達の原因を分類して次の設計に返す仕組みを最初から入れておくことを勧めたい。なお、2年目の結果はまだ出ていない。</p>
+
+<h2 id="今週の-takeaway">今週の Takeaway</h2>
+<ol>
+  <li>AI 系の依存パッケージを棚卸しする。LiteLLM の件を受け、該当バージョンの確認、認証情報の入れ替え、バージョンの固定を急ぐ。</li>
+  <li>エージェントの資産は標準の形式で持つ。Agent Skills の寄贈と、OpenAI のモデルの Google Cloud 対応で、モデルやクラウドを替えても資産が残る構成を取りやすくなった。</li>
+  <li>規制への備えは「品質管理」と「責任分担」の2軸で進める。EU の EN 18286 と、国内の責任・救済ルールの議論が同じ週に動いた。</li>
+</ol>
+
+<h2 id="来週の注目">来週の注目</h2>
+<ul>
+  <li>11/4 まで：Kimi K3.1 Pro のウェイト公開（Moonshot の予告）。</li>
+  <li>10/26〜：JIMTOF2026 で、三菱電機がヒューマノイドと工作機械の連携をデモする（<a href="https://www.mitsubishielectric.co.jp/ja/pr/2026/1021_rd/">三菱電機</a>の発表）。</li>
+</ul>
+
+<hr />
+<p><em>Weekly LLM Utilization #4 — 2026-10-25 号（2026-11-21 後日作成）</em></p>
+
+  </div>
+
+  
+  
+  
+
+  
+    
+    
+    
+      <nav class="issue-nav" aria-label="前後号">
+        <div class="issue-nav__cell issue-nav__cell--prev">
+          
+            
+            <span class="issue-nav__label">前号</span>
+            <a class="issue-nav__link" href="/weekly-llm-utilization/issues/2026-10-18/">Weekly LLM Utilization #3</a>
+          
+        </div>
+        <div class="issue-nav__cell issue-nav__cell--next">
+          
+            
+            <span class="issue-nav__label">次号</span>
+            <a class="issue-nav__link" href="/weekly-llm-utilization/issues/2026-11-01/">Weekly LLM Utilization #5</a>
+          
+        </div>
+      </nav>
+    
+  
+
+  <p class="issue-back"><a href="/weekly-llm-utilization/archive/">← アーカイブ一覧へ</a></p>
+
+  <a class="u-url" href="/weekly-llm-utilization/issues/2026-10-25/" hidden></a>
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <span class="site-footer__title">Weekly LLM Utilization</span>
+      <span class="site-footer__tag">毎週日曜公開、LLM の技術動向とビジネス活用を 10 分で</span>
+    </div>
+    <nav class="site-footer__nav" aria-label="フッター">
+      <a href="/weekly-llm-utilization/">トップ</a>
+      <a href="/weekly-llm-utilization/archive/">アーカイブ</a>
+      <a href="/weekly-llm-utilization/about/">About</a>
+      <a href="/weekly-llm-utilization/feed.xml">RSS</a>
+    </nav>
+    <small class="site-footer__copy">© 2026 Weekly LLM Utilization. 個人運営のニュースレター。</small>
+  </div>
+</footer>
+
+</body>
+</html>
